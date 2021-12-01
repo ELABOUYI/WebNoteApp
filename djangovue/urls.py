@@ -28,4 +28,5 @@ vue_urls = [
 urlpatterns = [
     path("admin/", admin.site.urls),
     path("", include(vue_urls)),
+    path("api/notes", include("notes.urls"))
 ]
